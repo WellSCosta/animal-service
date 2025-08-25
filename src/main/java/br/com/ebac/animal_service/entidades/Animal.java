@@ -34,8 +34,9 @@ public class Animal {
     @Column(nullable = false)
     private String condicoesChegada;
 
-    @Column(nullable = false)
-    private String nomeRecebedor;
+    @JoinColumn(nullable = false)
+    @ManyToOne
+    private Funcionario funcionario;
 
     @Column
     private Date dataObito;
@@ -75,12 +76,12 @@ public class Animal {
         this.condicoesChegada = condicoesChegada;
     }
 
-    public String getNomeRecebedor() {
-        return nomeRecebedor;
+    public Funcionario getfuncionario() {
+        return funcionario;
     }
 
-    public void setNomeRecebedor(String nomeRecebedor) {
-        this.nomeRecebedor = nomeRecebedor;
+    public void setfuncionario(Funcionario funcionario) {
+        this.funcionario = funcionario;
     }
 
     public Date getDataObito() {

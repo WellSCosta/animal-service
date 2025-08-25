@@ -13,37 +13,46 @@ VALUES ('Siamese', 'GATO');
 INSERT INTO raca (nome, especie)
 VALUES ('Persian', 'GATO');
 
-INSERT
-INTO
-    animal
-    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, nome_recebedor, porte)
-VALUES
-    ('Cachorro da EBAC', 1, 5, current_date, 'Bem pulguento', 'Cleber','Pequeno');
+INSERT INTO funcionario (nome)
+VALUES ('Cleber');
+INSERT INTO funcionario (nome)
+VALUES ('Renato');
+INSERT INTO funcionario (nome)
+VALUES ('Giovanna');
+INSERT INTO funcionario (nome)
+VALUES ('Wellington');
 
 INSERT
 INTO
     animal
-    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, nome_recebedor, porte)
+    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, funcionario_id, porte)
 VALUES
-    ('Outro Cachorro da EBAC', 2, 10, current_date, 'Bem velhinho', 'Renato','Grande');
+    ('Cachorro da EBAC', 1, 5, current_date, 'Bem pulguento', 1,'Pequeno');
 
 INSERT
 INTO
     animal
-    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, nome_recebedor, porte, data_adocao)
+    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, funcionario_id, porte)
 VALUES
-    ('Totó', 3, 2, current_date, 'chei de ódio', 'Giovanna','Pequeno', current_date);
+    ('Outro Cachorro da EBAC', 2, 10, current_date, 'Bem velhinho', 2,'Grande');
 
 INSERT
 INTO
     animal
-    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, nome_recebedor, porte, data_adocao)
+    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, funcionario_id, porte, data_adocao)
 VALUES
-    ('Perry', 4, 1, current_date, 'Preguiçoso', 'Wellington','Pequeno', current_date);
+    ('Totó', 3, 2, current_date, 'chei de ódio', 3,'Pequeno', current_date);
 
 INSERT
 INTO
     animal
-    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, nome_recebedor, porte)
+    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, funcionario_id, porte, data_adocao)
 VALUES
-    ('Malu', 5, 2, current_date, 'Cansado', 'Wellington','Pequeno');
+    ('Perry', 4, 1, current_date, 'Preguiçoso', 4,'Pequeno', current_date);
+
+INSERT
+INTO
+    animal
+    (nome_provisorio, raca_id, idade_estimada, data_entrada, condicoes_chegada, funcionario_id, porte)
+VALUES
+    ('Malu', 5, 2, current_date, 'Cansado', 4,'Pequeno');
